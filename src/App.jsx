@@ -30,7 +30,7 @@ function App() {
       try {
         let expression = disp;
         expression = expression.replaceAll('÷', '/');
-        expression = expression.replaceAll('X', '*');
+        expression = expression.replaceAll('x', '*');
         
         setDisp(String(eval(expression)));
       } catch (err) {
