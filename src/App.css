@@ -1,28 +1,66 @@
+{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Roboto, sans-serif;
+}
+body {
+  background-color: #f5f2eb;
+}
 .App {
-  box-sizing:border-box;
-  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.Header {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #2d372e;
+  margin-bottom: 24px;
 }
 .Calculator {
-  width: 500px;
-  margin: auto;
-  border: 1px solid black;
-  min-height: 100;
+  width: 100%;
+  max-width: 380px;
+  background-color: #344335;
+  padding: 24px;
+  border-radius: 20px;
+  box-shadow: 0 20px 35px -10px rgba(45, 55, 46, 0.3);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 .Display {
-  height: 50px;
-  font-size: 2em;
-  padding: 5px;
-  text-align: right;
-  background: rgb(238, 230, 218)
+  background-color: #e3ede6;
+  height: 90px;
+  border-radius: 12px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #1e2c20;
 }
-.Keypad{
+.Keypad {
   display: grid;
-  gap: 2px;
   grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
 }
-.Button{
+.Button {
+  height: 58px;
+  background-color: #527054;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.35rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
   justify-content: center;
-  border: 1px solid rgb(165, 85, 85);
-  font-size: 2em;
-  background-color: rgb(235, 198, 198);
+  box-shadow: 0 4px 0 #313d32;
+  
 }
